@@ -1,0 +1,222 @@
+/* Basic Navbar Styles */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Menu Styles */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+
+/* .image1{
+    background-image: url(./image3.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 100vh;
+} */
+
+.image1 h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-weight: 800;
+    padding-top: 300px;
+}
+.image1 h2{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+ 
+}
+
+
+p{
+    font-size: 20px;
+}
+
+
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+     top: 0;
+    left: 300px;
+    color: white;
+
+}
+
+.text h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.text h6 {
+    height: 60px;
+    width: 200px;
+    border: 1px solid grey;
+    text-align: center;
+    padding-top: 20px;
+    color: darkgreen;
+    background-color: white;
+}
+
+.text h6:hover {
+    border: none;
+    color: white;
+}
+.container1,
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item,
+.item2 {
+    max-width: 20%;
+    /* height: 15%; */
+    margin: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+.contact p{
+    font-size: 15px;
+}
+.contact{
+    margin: 20px;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+
+    .item img,
+    .item2 img {
+        width: 50%;
+        /* Adjust the image size as needed */
+    }
+}
+
+/* Media Query for screens smaller than 480px */
+@media (max-width: 480px) {
+
+    .item img,
+    .item2 img {
+        width: 100%;
+        /* Adjust the image size as needed */
+    }
+}
+
+  /* Media Query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .text {
+        top: 50px;
+        left: 20px;
+    }
+
+    .text h1 {
+        font-size: 30px;
+    }
+
+    .text h6 {
+        height: 40px;
+        width: 150px;
+        font-size: 12px;
+    }
+}
+
+
+
+  
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f8f9fa;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+}
+
+    

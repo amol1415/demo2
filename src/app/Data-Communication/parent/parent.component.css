@@ -1,0 +1,9 @@
+.parent{
+    border: 2px solid red;
+    margin-top: 50px;
+}
+.parent1{
+    text-align: center;
+    background-color: blueviolet;
+    color: white;
+}

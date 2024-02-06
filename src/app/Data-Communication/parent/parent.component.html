@@ -1,0 +1,21 @@
+<div class="container parent">
+    <h2>This is Parent Component</h2>
+
+    <app-inner-child [parentData]="dataFromParent" [parentData2]="data2FromParent"
+        (childData1)="fetchDataFromChild($event)"></app-inner-child>
+
+    <!-- parentData is a local variable -->
+    <br> <br>
+
+    <h3> Child To Parent</h3>
+    <p class="parent1"> {{childData}}</p>
+
+
+
+    <app-outer-child></app-outer-child>
+    {{outerChild1}}
+    <br> <br>
+    {{outerChi}}
+
+    <h3>Parent Component end</h3>
+</div>

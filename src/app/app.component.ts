@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demo2';
+  public navigationFlag: boolean = false;
+  constructor(private route: Router) {
+    this.navigationFlag = true;
+
+  }
+  onAboutUsClick() {
+    if (this.navigationFlag) {
+      //bussiness logic
+      this.route.navigateByUrl('About Us')
+    }
+
+  }
+
+  onContactUsClick() {
+    if (this.navigationFlag) {
+      //bussiness logic
+      this.route.navigate(['Contact Us'])
+    }
+  }
+  onEmpClick() {
+    this.route.navigate(['emp/12/Gourang'])
+  }
+
 }

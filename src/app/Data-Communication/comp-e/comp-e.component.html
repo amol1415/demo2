@@ -1,0 +1,19 @@
+<p>comp-e works!</p>
+<button class="btn bg-primary" (click)="receiveApiData()">ApiData</button>
+<table class="table">
+    <tr>
+        <th>id</th>
+        <th>email</th>
+        <th>first_name</th>
+        <th>last_name</th>
+        <th>avatar</th>
+    </tr>
+    <tr *ngFor="let x of dataFromE.data">
+        <td>{{x.id}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.first_name}}</td>
+        <td>{{x.last_name}}</td>
+        <td><img [src]="x.avatar" alt=""></td>
+
+    </tr>
+</table>
